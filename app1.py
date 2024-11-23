@@ -759,9 +759,11 @@ def update_graphs(selected_institution_type):
     return sunburst_fig, animated_line_fig, bubble_chart_fig, radar_fig , conversion_fig_3d
 
 
-# Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    # Get the PORT from the environment variables (default to 8050 if not set)
+    port = int(os.environ.get("PORT", 8050))
+    # Run the server on the correct port and bind to 0.0.0.0
+    app.run_server(debug=False, host="0.0.0.0", port=port)
 
 
 
