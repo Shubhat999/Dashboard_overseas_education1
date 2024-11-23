@@ -528,7 +528,7 @@ app.layout = html.Div([
                 'margin-bottom': '20px'
             }),
             html.Div([dcc.Graph(id='market_share', figure=bullet_chart, style={'height': '300px'})]),
-            dcc.Interval(id='interval', interval=500, n_intervals=10)
+            dcc.Interval(id='interval', interval=900, n_intervals=10)
         ], style={
             'flex': '1',
             'padding': '20px',
