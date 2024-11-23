@@ -475,7 +475,7 @@ import numpy as np
 import os
 
 # Load the data
-df = pd.read_csv(r'Data\.ipynb_checkpoints\Students_data.csv')
+df = pd.read_csv(r'Students_data.csv')
 
 # Rename columns for consistency
 df.rename(columns={ 
